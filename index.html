@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Goat Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Secret numbers in the corner -->
+<div id="secret-numbers">
+    <p>μυστικά: 1.000.000 - mparhss, 69 - gianidic, 4 - chris, 6969 - anasalex, 420 - salphss, 100 - alexgoat</p>
+</div>
+
+<!-- Calculator Container -->
+<div id="calculator">
+    <input type="text" id="calculator-input" placeholder="γραψε μια πραξη γκιατ" disabled />
+    <div id="buttons">
+        <button onclick="appendNumber(1)">1</button>
+        <button onclick="appendNumber(2)">2</button>
+        <button onclick="appendNumber(3)">3</button>
+        <button onclick="appendOperator('+')">+</button>
+
+        <button onclick="appendNumber(4)">4</button>
+        <button onclick="appendNumber(5)">5</button>
+        <button onclick="appendNumber(6)">6</button>
+        <button onclick="appendOperator('-')">-</button>
+
+        <button onclick="appendNumber(7)">7</button>
+        <button onclick="appendNumber(8)">8</button>
+        <button onclick="appendNumber(9)">9</button>
+        <button onclick="appendOperator('*')">*</button>
+
+        <button onclick="appendNumber(0)">0</button>
+        <button onclick="clearInput()">C</button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="appendOperator('/')">/</button>
+    </div>
+</div>
+
+<!-- Image Container (for displaying images) -->
+<div id="image-container"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
